@@ -1,0 +1,163 @@
+site_name: LittleLink Custom documentation
+site_description: Documentation of the open-source Linktree alternative
+site_url: 'https://docs.littlelink-custom.com'
+
+repo_url: https://github.com/JulianPrieber/littlelink-custom
+edit_uri: https://github.com/LittleLink-Custom/docs/blob/main/
+repo_name: LittleLink Custom
+
+theme:
+    name: material
+    favicon: assets/img/logo/logo.svg
+    logo: assets/img/logo/logo.svg
+    icon:
+      repo: fontawesome/brands/github
+      edit: material/file-edit-outline
+    language: 'en'
+    font: false
+    features:
+      - navigation.top
+      - navigation.instant
+      #- navigation.tabs
+      #- navigation.tabs.sticky
+      - navigation.sections
+      - navigation.indexes
+      - toc.follow
+      - search.suggest
+      - search.highlight
+      - search.share    
+    palette:
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+markdown_extensions:
+  # Code highlighting in ``` ``` blocks
+  - codehilite:
+      guess_lang: true
+  # Table of Contents
+  - toc:
+      permalink: true
+  # block-styled side content
+  - admonition
+  # linkifies URL and email links without having to wrap them in Markdown syntax. Also, allows shortens repository issue, pull request, and commit links.
+  - pymdownx.magiclink
+  # Task lists (https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/)
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Highlight words with ==mark me==
+  - pymdownx.mark
+  # Adds support for deletion ~~Delete me~~ and subscript text~a\ subscript~
+  - pymdownx.tilde
+  # This extension is a convenience extension which includes many pymdownx extensions
+  # (https://facelessuser.github.io/pymdown-extensions/extensions/extra/)
+  - pymdownx.extra
+  # (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
+  - pymdownx.details
+  # Tabbed provides a syntax to easily add tabbed Markdown content.
+  # https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Adds syntax for defining footnotes in Markdown documents (https://python-markdown.github.io/extensions/footnotes/)
+  - footnotes
+  # Adds the ability to define abbreviations
+  - abbr
+  # Metadata support in pages
+  # (https://squidfunk.github.io/mkdocs-material/extensions/metadata/)
+  - meta
+  
+
+nav:
+    - Overview:
+        - index.md
+        - FAQ: faq.md
+    - Getting started:
+        - getting-started/index.md
+        - Requirements: getting-started/requirements.md
+        - Download: getting-started/download.md
+        - Setup: getting-started/setup.md
+        - Other webservers: getting-started/other-webservers.md
+    - Setup:
+        - First steps: setup/first-steps.md
+        - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
+        - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
+        - Disable registration: setup/disable-registration.md
+    - Configuration:
+        - configuration/index.md
+        - Email verification: configuration/email-verification.md
+        - Internal notifications: configuration/internal-notifications.md
+        - Home URL: configuration/home-url.md
+        - App Settings: configuration/app-settings.md
+        - Debug Settings: configuration/debug-settings.md
+        - Database Settings: configuration/database-settings.md
+        - Mail Settings: configuration/mail-settings.md
+        - Cache Settings: configuration/cache-settings.md
+        - Miscellaneous Settings: configuration/miscellaneous-settings.md
+        - Social login: configuration/social-login.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/earth-europe
+      link: https://littlelink-custom.com
+      name: Website
+    - icon: simple/github
+      link: https://github.com/LittleLink-Custom
+      name: GitHub
+    - icon: simple/mastodon
+      link: https://mstdn.social/@littlelink_custom
+      name: Mastodon
+    - icon: fontawesome/brands/discord
+      link: https://discord.littlelink-custom.com
+      name: Discord
+    - icon: simple/matrix
+      link: https://matrix.littlelink-custom.com
+      name: Matrix
+    - icon: simple/lemmy
+      link: https://lemmy.ml/c/littlelinkcustom
+      name: Lemmy
+    - icon: fontawesome/solid/heart
+      link: https://littlelink-custom.com/sponsor
+      name: Sponsor us
+
+copyright: Copyright &copy; 2022 - present LittleLink Custom
+
+extra_css:
+  - assets/css/style.css
+
+extra_javascript:
+  - assets/js/script.js
+
+plugins:
+  - search:
+      lang:
+        - en
+        - de
+  - git-revision-date-localized:
+      type: timeago
+      timezone: Europe/Berlin
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      enabled: false
+#  - git-authors
+  - enumerate-headings:
+      toc_depth: 6
+      exclude:
+        - index.md
+        - faq.md
+  - print-site

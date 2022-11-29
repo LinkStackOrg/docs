@@ -1,0 +1,30 @@
+/*:root > * {
+    --md-primary-fg-color:        #896FF0;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+    --md-primary-accent-color: #12D6DF;
+}*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: "/docs/fonts/OpenSans/OpenSans-Regular.ttf";
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: "/docs/fonts/RobotoMono/RobotoMono-Regular.ttf";
+}
+
+:root {
+    --md-text-font: "OpenSans"; 
+    --md-code-font: "RobotoMono";
+}
+
+.md-nav {
+    margin-bottom: 15px;
+    font-size: .71rem;
+}
