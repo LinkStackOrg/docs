@@ -153,8 +153,8 @@ plugins:
       locale: en
       fallback_to_build_date: false
       enable_creation_date: true
-      enabled: false
-#  - git-authors
+      enabled: true
+  - git-authors
   - enumerate-headings:
       toc_depth: 6
       exclude:
