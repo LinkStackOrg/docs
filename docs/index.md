@@ -1,18 +1,19 @@
 ---
 title: Overview of LittleLink Custom
 description: Brief overview of LittleLink Custom
+ᴴₒᴴₒᴴₒ: true
 ---
 
 # Overview of LittleLink Custom
 
-<img src="/assets/img/overview/banner_wide_transparent.png">
+![Header banner](/assets/img/overview/banner_wide_transparent.png#only-dark){.nglb}
+![Header banner](/assets/img/overview/banner_wide_dark.png#only-light){.nglb}
 
 <div style="text-align: center;">
 The plug-and-play approach to LittleLink, with advanced features. <br>
 <i>The open-source alternative to LinkTree and similar.</i>
 <br><br>
 <b>Welcome to the LittleLink Custom Documentation!</b>
-
 </div>
 
 ## Function    

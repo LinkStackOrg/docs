@@ -81,6 +81,13 @@ markdown_extensions:
   # Metadata support in pages
   # (https://squidfunk.github.io/mkdocs-material/extensions/metadata/)
   - meta
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   
 
 nav:
@@ -147,7 +154,6 @@ plugins:
   - search:
       lang:
         - en
-        - de
   - git-revision-date-localized:
       type: timeago
       timezone: Europe/Berlin
@@ -156,17 +162,30 @@ plugins:
       enable_creation_date: true
       enabled: true
   - git-authors:
-        show_contribution: true
-        show_line_count: true
-        show_email_address: false
-        count_empty_lines: true
-        fallback_to_empty: true
-        sort_authors_by: contribution
-        authorship_threshold_percent: 0
-        enabled: true
+      show_contribution: true
+      show_line_count: true
+      show_email_address: false
+      count_empty_lines: true
+      fallback_to_empty: true
+      sort_authors_by: contribution
+      authorship_threshold_percent: 0
+      enabled: true
   - enumerate-headings:
       toc_depth: 6
       exclude:
         - index.md
         - faq.md
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - nglb
+      auto_caption: true
+      caption_position: bottom
   - print-site
