@@ -3,7 +3,7 @@ site_description: Documentation of the open-source Linktree alternative
 site_url: 'https://docs.littlelink-custom.com'
 
 repo_url: https://github.com/JulianPrieber/littlelink-custom
-edit_uri: https://github.com/LittleLink-Custom/docs/blob/main/
+edit_uri: https://github.com/LittleLink-Custom/docs/blob/main/docs
 repo_name: LittleLink Custom
 
 theme:
