@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <link href="https://social.example.com/@username" rel="me" />
+{% endblock %}
+
 {% block content %}
   {{ super() }}
 
