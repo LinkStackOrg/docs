@@ -8,7 +8,7 @@ repo_name: LittleLink Custom
 
 theme:
     name: material
-    custom_dir: docs/overrides
+    custom_dir: docs/assets/overrides
     favicon: assets/img/logo/logo.svg
     logo: assets/img/logo/logo.svg
     icon:
