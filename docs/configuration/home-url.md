@@ -8,7 +8,7 @@ Some people might only want to use LittleLink Custom for their personal pages. W
 
 So for example, if your profile URL were ``my.domain.com/littlelink-custom/@admin`` this setting could display your profile at ``my.domain.com/littlelink-custom``.
 
-To set your profile as the homepage, enter a LittleLink name as the value in the ``HOME_URL`` key field. To restore the default behavior, simply empty the field again.
+To set your profile as the homepage, enter a LittleLink name as the value in the ``HOME_URL`` key field. To restore the default behaviour, simply empty the field again.
 
 <br>
 

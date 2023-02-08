@@ -1,0 +1,27 @@
+{
+    "cSpell.words": [
+        "Ctype",
+        "fastcgi",
+        "Fileinfo",
+        "glightbox",
+        "ᴴₒᴴₒᴴₒ",
+        "Laravel",
+        "Linktree",
+        "littlelink",
+        "matomo",
+        "Matomo",
+        "Mbstring",
+        "mkdocs",
+        "nglb",
+        "nosniff",
+        "PCRE",
+        "realpath",
+        "SAMEORIGIN",
+        "sqlite",
+        "Vhosts"
+    ],
+    "cSpell.enableFiletypes": [
+        "!css",
+        "!yaml"
+    ]
+}
