@@ -110,18 +110,18 @@ nav:
         - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
         - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
         - Disable registration: setup/disable-registration.md
-    - Configuration:
-        - configuration/index.md
-        - Email verification: configuration/email-verification.md
-        - Internal notifications: configuration/internal-notifications.md
-        - Home URL: configuration/home-url.md
-        - App Settings: configuration/app-settings.md
-        - Debug Settings: configuration/debug-settings.md
-        - Database Settings: configuration/database-settings.md
-        - Mail Settings: configuration/mail-settings.md
-        - Cache Settings: configuration/cache-settings.md
-        - Miscellaneous Settings: configuration/miscellaneous-settings.md
-        - Social login: configuration/social-login.md
+    # - Configuration:
+    #     - configuration/index.md
+    #     - Email verification: configuration/email-verification.md
+    #     - Internal notifications: configuration/internal-notifications.md
+    #     - Home URL: configuration/home-url.md
+    #     - App Settings: configuration/app-settings.md
+    #     - Debug Settings: configuration/debug-settings.md
+    #     - Database Settings: configuration/database-settings.md
+    #     - Mail Settings: configuration/mail-settings.md
+    #     - Cache Settings: configuration/cache-settings.md
+    #     - Miscellaneous Settings: configuration/miscellaneous-settings.md
+    #     - Social login: configuration/social-login.md
 
 extra:
   social:
