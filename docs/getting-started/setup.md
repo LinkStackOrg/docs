@@ -2,13 +2,13 @@
 
 The installation of LittleLink Custom is tailored to be as easy and user-friendly as possible.
 
-In most cases, you will just be able to drop the LittleLink Custom installation folder onto of your web server, then visit this page with a browser to follow the prompts on your screen.
+In most cases, you will just be able to drop the LittleLink Custom installation folder onto your web server, then visit this page with a browser to follow the setup wizard.
 
-**To ensure everything works as expected, please read the [installation requirements](#requirements).**
+It will:
 
-<br>
+1. Check the server dependencies
+2. Setup the database
+3. Create the admin user
+4. Configure the app
 
-You don't have to do anything further than just logging in to the Admin Panel with the default credentials:
-
-Email: ``admin@admin.com`` <br>
-Password: ``12345678``
+**To ensure everything works as expected, please read the [installation requirements](./requirements.md).**
