@@ -102,7 +102,6 @@ nav:
     - Getting started:
         - getting-started/index.md
         - Requirements: getting-started/requirements.md
-        - Download: getting-started/download.md
         - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
     - Setup:
