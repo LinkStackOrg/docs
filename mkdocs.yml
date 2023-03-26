@@ -63,7 +63,7 @@ markdown_extensions:
   - admonition
   # linkifies URL and email links without having to wrap them in Markdown syntax. Also, allows shortens repository issue, pull request, and commit links.
   - pymdownx.magiclink
-  # Task lists (https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/)
+  # Task lists (https://facelessuser.github.io/pymdown-extensions/extensions/tasklist)
   - pymdownx.tasklist:
       custom_checkbox: true
   # Highlight words with ==mark me==
@@ -71,20 +71,20 @@ markdown_extensions:
   # Adds support for deletion ~~Delete me~~ and subscript text~a\ subscript~
   - pymdownx.tilde
   # This extension is a convenience extension which includes many pymdownx extensions
-  # (https://facelessuser.github.io/pymdown-extensions/extensions/extra/)
+  # (https://facelessuser.github.io/pymdown-extensions/extensions/extra)
   - pymdownx.extra
-  # (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
+  # (https://facelessuser.github.io/pymdown-extensions/extensions/details)
   - pymdownx.details
   # Tabbed provides a syntax to easily add tabbed Markdown content.
   # https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   - pymdownx.tabbed:
       alternate_style: true
-  # Adds syntax for defining footnotes in Markdown documents (https://python-markdown.github.io/extensions/footnotes/)
+  # Adds syntax for defining footnotes in Markdown documents (https://python-markdown.github.io/extensions/footnotes)
   - footnotes
   # Adds the ability to define abbreviations
   - abbr
   # Metadata support in pages
-  # (https://squidfunk.github.io/mkdocs-material/extensions/metadata/)
+  # (https://squidfunk.github.io/mkdocs-material/extensions/metadata)
   - meta
   - attr_list
   - md_in_html

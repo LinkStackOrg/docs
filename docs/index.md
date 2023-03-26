@@ -17,7 +17,7 @@ The plug-and-play approach to LittleLink, with advanced features. <br>
 </div>
 
 ## Function    
-**LittleLink Custom provides** you with **a website similar to** [Linktree](https://linktr.ee/). Many **social media platforms only allow you to add one link**, with this you can simply **link to your LittleLink Custom page** and have **all the links you want** displayed on one site. You can share all your links to your social media platform or important links to **easy accessible and hosted on your own web-server** or web-hosting provider. On this website, other users can register and create their own links, you can access other user via the Admin Panel.
+**LittleLink Custom provides** you with **a website similar to** [Linktree](https://linktr.ee). Many **social media platforms only allow you to add one link**, with this you can simply **link to your LittleLink Custom page** and have **all the links you want** displayed on one site. You can share all your links to your social media platform or important links to **easy accessible and hosted on your own web-server** or web-hosting provider. On this website, other users can register and create their own links, you can access other user via the Admin Panel.
 
 ## About
 **LittleLink Custom** is a fork of [LittleLink Admin](https://github.com/latuminggi/littlelink-admin) with a **set goal** of making the admin panel **easier to use and setup**, for inexperienced and first-time user's, with the addition of **many custom features** themed around customization for the individual users, LittleLink pages.
