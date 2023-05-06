@@ -1,10 +1,10 @@
-site_name: LittleLink Custom documentation
+site_name: LinkStack documentation
 site_description: Documentation of the open-source Linktree alternative
-site_url: 'https://docs.littlelink-custom.com'
+site_url: 'https://docs.linkstack.org'
 
-repo_url: https://github.com/JulianPrieber/littlelink-custom
-edit_uri: https://github.com/LittleLink-Custom/docs/edit/main/docs
-repo_name: LittleLink Custom
+repo_url: https://github.com/LinkStackOrg/LinkStack
+edit_uri: https://github.com/LinkStackOrg/docs/edit/main/docs
+repo_name: LinkStack
 
 theme:
     name: material
@@ -125,13 +125,13 @@ nav:
 extra:
   social:
     - icon: fontawesome/solid/earth-europe
-      link: https://linkstack.org/
+      link: https://linkstack.org
       name: Website
     - icon: simple/github
-      link: https://github.com/LittleLink-Custom
+      link: https://github.com/LinkStackOrg
       name: GitHub
     - icon: simple/mastodon
-      link: https://mstdn.social/@littlelink_custom
+      link: https://mstdn.social/@linkstack
       name: Mastodon
     - icon: fontawesome/brands/discord
       link: https://discord.littlelink-custom.com
@@ -140,13 +140,13 @@ extra:
       link: https://matrix.littlelink-custom.com
       name: Matrix
     - icon: simple/lemmy
-      link: https://lemmy.ml/c/littlelinkcustom
+      link: https://lemmy.ml/c/linkstack
       name: Lemmy
     - icon: fontawesome/solid/heart
-      link: https://littlelink-custom.com/sponsor
+      link: https://linkstack.org/hosted
       name: Sponsor us
 
-copyright: Copyright &copy; 2022 - present LittleLink Custom
+copyright: Copyright &copy; 2022 - 2023 LittleLink Custom | 2023 - present LinkStack
 
 extra_css:
   - assets/css/style.css

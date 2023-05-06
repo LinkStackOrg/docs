@@ -4,7 +4,7 @@ glightbox.auto_caption: true
 
 # Getting to know the Admin Panel
 
-*The Admin Panel is where you can customize your LittleLink Custom instance.*
+*The Admin Panel is where you can customise your LinkStack instance.*
 
 Your Admin Panel indicates to Admins how many links are currently shared, how many times links have been clicked and how many users are currently registered.
 
