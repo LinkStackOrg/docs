@@ -134,16 +134,16 @@ extra:
       link: https://mstdn.social/@linkstack
       name: Mastodon
     - icon: fontawesome/brands/discord
-      link: https://discord.littlelink-custom.com
+      link: https://discord.linkstack.org
       name: Discord
     - icon: simple/matrix
-      link: https://matrix.littlelink-custom.com
+      link: https://matrix.linkstack.org
       name: Matrix
     - icon: simple/lemmy
       link: https://lemmy.ml/c/linkstack
       name: Lemmy
     - icon: fontawesome/solid/heart
-      link: https://linkstack.org/hosted
+      link: https://linkstack.org/donate
       name: Sponsor us
 
 copyright: Copyright &copy; 2022 - 2023 LittleLink Custom | 2023 - present LinkStack
