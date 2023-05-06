@@ -6,7 +6,7 @@ description: Brief overview of LinkStack
 
 # Overview of LinkStack
 
-![Header banner](/assets/img/overview/banner_wide_transparent.png#only-dark){.nglb}
+![Header banner](/assets/img/overview/banner_wide_light.png#only-dark){.nglb}
 ![Header banner](/assets/img/overview/banner_wide_dark.png#only-light){.nglb}
 
 <div style="text-align: center;">
