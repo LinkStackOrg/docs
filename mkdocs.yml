@@ -105,10 +105,10 @@ nav:
         - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
     - Setup:
-        - First steps: setup/first-steps.md
-        - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
+    #    - First steps: setup/first-steps.md
+    #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
         - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
-        - Disable registration: setup/disable-registration.md
+    #    - Disable registration: setup/disable-registration.md
     # - Configuration:
     #     - configuration/index.md
     #     - Email verification: configuration/email-verification.md
@@ -125,28 +125,28 @@ nav:
 extra:
   social:
     - icon: fontawesome/solid/earth-europe
-      link: https://linkstack.org/
+      link: https://linkstack.org
       name: Website
     - icon: simple/github
-      link: https://github.com/LittleLink-Custom
+      link: https://github.com/LinkStackOrg
       name: GitHub
     - icon: simple/mastodon
-      link: https://mstdn.social/@littlelink_custom
+      link: https://mstdn.social/@linkstack
       name: Mastodon
     - icon: fontawesome/brands/discord
-      link: https://discord.littlelink-custom.com
+      link: https://discord.linkstack.org
       name: Discord
     - icon: simple/matrix
-      link: https://matrix.littlelink-custom.com
+      link: https://matrix.linkstack.org
       name: Matrix
     - icon: simple/lemmy
-      link: https://lemmy.ml/c/littlelinkcustom
+      link: https://lemmy.ml/c/linkstack
       name: Lemmy
     - icon: fontawesome/solid/heart
-      link: https://littlelink-custom.com/sponsor
+      link: https://linkstack.org/donate
       name: Sponsor us
 
-copyright: Copyright &copy; 2022 - present LittleLink Custom
+copyright: Copyright &copy; 2022 - 2023 LittleLink Custom | 2023 - present LinkStack
 
 extra_css:
   - assets/css/style.css

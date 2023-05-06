@@ -1,6 +1,6 @@
 # Requirements
 
-**LittleLink Custom under optimal conditions is a simple drag and drop solution with no further configuration required.**
+**LinkStack under optimal conditions is a simple drag and drop solution with no further configuration required.**
 
 Here are all requirements listed, for you to check.
 
