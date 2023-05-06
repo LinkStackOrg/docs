@@ -105,10 +105,10 @@ nav:
         - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
     - Setup:
-        - First steps: setup/first-steps.md
-        - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
+    #    - First steps: setup/first-steps.md
+    #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
         - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
-        - Disable registration: setup/disable-registration.md
+    #    - Disable registration: setup/disable-registration.md
     # - Configuration:
     #     - configuration/index.md
     #     - Email verification: configuration/email-verification.md
