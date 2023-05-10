@@ -27,6 +27,7 @@ Here are all requirements listed, for you to check.
 - PCRE PHP Extension
 - PDO PHP Extension
 - Tokenizer PHP Extension
+- iconv PHP Extension
 - XML PHP Extension
 
 Depending on your database type:
