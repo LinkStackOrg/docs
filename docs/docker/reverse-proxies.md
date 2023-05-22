@@ -19,3 +19,39 @@ labels:
 ```
 Start your Docker Compose and navigate to your "persistent storage" and 
 change the .env search for FORCE_HTTPS=false (line 85) and set this to "true"
+
+## Nginx 
+Make sure to use HTTPS to access your container to avoid mixed content errors
+```
+server {
+  listen        443 ssl;
+  listen        [::]:443 ssl;
+  listen        80;
+  listen        [::]:80;
+  server_name   your.domain.name;
+
+  location / {
+    # Replace with the IP address and port number of your Docker container.
+    proxy_pass                          https://127.0.0.1:443;
+    proxy_set_header Host               $host;
+    proxy_set_header X-Real-IP          $remote_addr;
+
+    proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto  https;
+    proxy_set_header X-VerifiedViaNginx yes;
+    proxy_read_timeout                  60;
+    proxy_connect_timeout               60;
+    proxy_redirect                      off;
+
+    # Specific for websockets: force the use of HTTP/1.1 and set the Upgrade header
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_cache_bypass $http_upgrade;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    
+    # Fixes Mixed Content errors.
+    add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
+  }
+}
+```
