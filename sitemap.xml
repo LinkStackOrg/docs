@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.linkstack.org/docker/reverse-proxies/</loc>
+         <lastmod>2023-05-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.linkstack.org/getting-started/</loc>
          <lastmod>2023-05-22</lastmod>
          <changefreq>daily</changefreq>
