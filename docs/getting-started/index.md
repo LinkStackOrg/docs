@@ -18,6 +18,6 @@ If you want to have full control over your website, you can set up your own web 
 
 [**Web version**](https://linkstack.org/get-started)
 
-Docker is a containerization platform that makes it easy to set up and run applications in isolated environments. With Docker, you can easily deploy our platform on your own server without having to worry about the technical details of setting up a web server. You can find instructions on how to set up our platform on Docker by following the link [here](https://github.com/LinkStackOrg/ls-docker#readme).
+Docker is a containerization platform that makes it easy to set up and run applications in isolated environments. With Docker, you can easily deploy our platform on your own server without having to worry about the technical details of setting up a web server. You can find instructions on how to set up our platform on Docker by following the link [here](https://github.com/linkstackorg/linkstack-docker).
 
 [**Docker version**](https://linkstack.org/docker)
