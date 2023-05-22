@@ -873,20 +873,20 @@ allow all;
 <p>add this labels to your Docker Compose File 
 <div class="highlight"><pre><span></span><code>labels:
       - &quot;traefik.enable=true&quot;
-      - &quot;traefik.http.routers.routename-rtr-ui.rule=Host(`domain.de`)&quot;
-      - &quot;traefik.http.routers.routename-rtr-ui.entrypoints=https&quot;
-      - &quot;traefik.http.routers.routename-rtr-ui.tls=true&quot;
-      - &quot;traefik.http.routers.routename-rtr-ui.tls.certresolver=le&quot;
-      - &quot;traefik.http.routers.routename-rtr-ui.middlewares=routename-ui-header,default@file&quot;
-      - &quot;traefik.http.middlewares.routename-ui-header.headers.customrequestheaders.X-Forwarded-Proto=https&quot;
-      - &quot;traefik.http.middlewares.routename-ui-header.headers.customResponseHeaders.X-Robots-Tag=none&quot;
-      - &quot;traefik.http.middlewares.routename-ui-header.headers.customResponseHeaders.Strict-Transport-Security=max-age=63072000&quot;
-      - &quot;traefik.http.middlewares.routename-ui-header.headers.stsSeconds=31536000&quot;
-      - &quot;traefik.http.middlewares.routename-ui-header.headers.accesscontrolalloworiginlist=*&quot;
+      - &quot;traefik.http.routers.name-ui.rule=Host(`domain.de`)&quot;
+      - &quot;traefik.http.routers.name-ui.entrypoints=https&quot;
+      - &quot;traefik.http.routers.name-ui.tls=true&quot;
+      - &quot;traefik.http.routers.name-ui.tls.certresolver=le&quot;
+      - &quot;traefik.http.routers.name-ui.middlewares=name-head,default@file&quot;
+      - &quot;traefik.http.middlewares.name-head.headers.customrequestheaders.X-Forwarded-Proto=https&quot;
+      - &quot;traefik.http.middlewares.name-head.headers.customResponseHeaders.X-Robots-Tag=none&quot;
+      - &quot;traefik.http.middlewares.name-head.headers.customResponseHeaders.Strict-Transport-Security=max-age=63072000&quot;
+      - &quot;traefik.http.middlewares.name-head.headers.stsSeconds=31536000&quot;
+      - &quot;traefik.http.middlewares.name-head.headers.accesscontrolalloworiginlist=*&quot;
       - &quot;traefik.docker.network=traefik_web&quot;
 </code></pre></div>
-Start your Docker Compose and navigate to your "persistent storage" and change the .env 
-search for FORCE_HTTPS=false (line 85) and set this to "true</p></section><h1 class='nav-section-title-end'>Ended: Docker</h1>
+Start your Docker Compose and navigate to your "persistent storage" and 
+change the .env search for FORCE_HTTPS=false (line 85) and set this to "true"</p></section><h1 class='nav-section-title-end'>Ended: Docker</h1>
                         <h1 class='nav-section-title' id='section-setup'>
                             Setup <a class='headerlink' href='#section-setup' title='Permanent link'>↵</a>
                         </h1>

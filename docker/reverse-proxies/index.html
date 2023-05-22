@@ -323,26 +323,26 @@
 <p>add this labels to your Docker Compose File 
 <div class="highlight"><pre><span></span><code>labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.routename-rtr-ui.rule=Host(`domain.de`)"
-      - "traefik.http.routers.routename-rtr-ui.entrypoints=https"
-      - "traefik.http.routers.routename-rtr-ui.tls=true"
-      - "traefik.http.routers.routename-rtr-ui.tls.certresolver=le"
-      - "traefik.http.routers.routename-rtr-ui.middlewares=routename-ui-header,default@file"
-      - "traefik.http.middlewares.routename-ui-header.headers.customrequestheaders.X-Forwarded-Proto=https"
-      - "traefik.http.middlewares.routename-ui-header.headers.customResponseHeaders.X-Robots-Tag=none"
-      - "traefik.http.middlewares.routename-ui-header.headers.customResponseHeaders.Strict-Transport-Security=max-age=63072000"
-      - "traefik.http.middlewares.routename-ui-header.headers.stsSeconds=31536000"
-      - "traefik.http.middlewares.routename-ui-header.headers.accesscontrolalloworiginlist=*"
+      - "traefik.http.routers.name-ui.rule=Host(`domain.de`)"
+      - "traefik.http.routers.name-ui.entrypoints=https"
+      - "traefik.http.routers.name-ui.tls=true"
+      - "traefik.http.routers.name-ui.tls.certresolver=le"
+      - "traefik.http.routers.name-ui.middlewares=name-head,default@file"
+      - "traefik.http.middlewares.name-head.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.middlewares.name-head.headers.customResponseHeaders.X-Robots-Tag=none"
+      - "traefik.http.middlewares.name-head.headers.customResponseHeaders.Strict-Transport-Security=max-age=63072000"
+      - "traefik.http.middlewares.name-head.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.name-head.headers.accesscontrolalloworiginlist=*"
       - "traefik.docker.network=traefik_web"
 </code></pre></div>
-Start your Docker Compose and navigate to your "persistent storage" and change the .env 
-search for FORCE_HTTPS=false (line 85) and set this to "true</p>
+Start your Docker Compose and navigate to your "persistent storage" and 
+change the .env search for FORCE_HTTPS=false (line 85) and set this to "true"</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-05-22T10:51:44+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-05-22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-05-22T10:56:48+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-05-22</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-05-22T09:50:03+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-05-22</span>
