@@ -34,3 +34,6 @@ Depending on your database type:
 
 - SQLite PHP Extension (default, no configuration required)
 - MySQL PHP Extension
+
+
+*This documentation only applies to the webserver deploy. If you deploy LinkStack as Docker-container, please take a look at the docker specific docs.*

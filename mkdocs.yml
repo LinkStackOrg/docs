@@ -104,6 +104,8 @@ nav:
         - Requirements: getting-started/requirements.md
         - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
+    - Docker:
+        - Reverse Proxies: docker/reverse-proxies.md
     - Setup:
     #    - First steps: setup/first-steps.md
     #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
