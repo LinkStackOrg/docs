@@ -10,6 +10,3 @@ Alternative download the latest release here:
 [![Download button](/assets/img/download/download_latest.png){.nglb}](https://github.com/linkstackorg/linkstack/releases/latest/download/linkstack.zip)
 
 *This file contains the LinkStack installation folder and a README file.*
-
-If you prefer to download LinkStack directly via the ter
-
