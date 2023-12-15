@@ -10,9 +10,9 @@
 <link href="../setup/" rel="prev"/>
 <link href="../../docker/reverse-proxies/" rel="next"/>
 <link href="../../assets/img/logo/logo.svg" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.5.1" name="generator"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.2" name="generator"/>
 <title>Other webservers - LinkStack documentation</title>
-<link href="../../assets/stylesheets/main.45e1311d.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../../css/print-site-enum-headings1.css" rel="stylesheet"/>
 <link href="../../css/print-site-enum-headings2.css" rel="stylesheet"/>
@@ -240,7 +240,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#more-webservers">4.2 
+<a class="md-nav__link" href="#apache2">4.2 
+<span class="md-ellipsis">
+      Apache2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-webservers">4.3 
 <span class="md-ellipsis">
       More webservers
     </span>
@@ -322,7 +329,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#more-webservers">4.2 
+<a class="md-nav__link" href="#apache2">4.2 
+<span class="md-ellipsis">
+      Apache2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-webservers">4.3 
 <span class="md-ellipsis">
       More webservers
     </span>
@@ -421,7 +435,33 @@ allow all;
 
 }
 </code></pre></div>
-<h2 id="more-webservers"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> More webservers<a class="headerlink" href="#more-webservers" title="Permanent link">¶</a></h2>
+<h2 id="apache2"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> Apache2<a class="headerlink" href="#apache2" title="Permanent link">¶</a></h2>
+<p><strong>This is just an example, we assume that you have prior experience setting up Apache Vhosts!</strong></p>
+<p><strong>Access to configuration files is already denied via <code>.htaccess</code> files in the LinkStack root directory.</strong></p>
+<p><br/></p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="err">*:80</span><span class="nt">&gt;</span>
+<span class="w">        </span>ServerName<span class="w"> </span>example.com
+<span class="w">        </span>ServerAlias<span class="w"> </span>www.example.com
+<span class="w">        </span>ServerAdmin<span class="w"> </span>webmaster@localhost
+<span class="w">        </span>DocumentRoot<span class="w"> </span>/path/to/example.com
+<span class="w">        </span>DirectoryIndex<span class="w"> </span>index.htm<span class="w"> </span>index.html<span class="w"> </span>index.php
+<span class="w">        </span>ErrorLog<span class="w"> </span>/var/log/httpd/linkstack/error.log
+<span class="w">        </span>CustomLog<span class="w"> </span>/var/log/httpd/linkstack/access.log<span class="w"> </span>combined
+
+<span class="w">        </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">        </span>Options<span class="w"> </span>FollowSymLinks
+<span class="w">        </span>AllowOverride<span class="w"> </span>None
+<span class="w">        </span><span class="nt">&lt;/Directory&gt;</span>
+
+<span class="w">        </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="err">/path/to/example.com</span><span class="nt">/&gt;</span>
+<span class="w">        </span>Options<span class="w"> </span>-Indexes<span class="w"> </span>+MultiViews<span class="w"> </span>+FollowSymLinks<span class="w"> </span>+ExecCGI
+<span class="w">        </span>Require<span class="w"> </span>all<span class="w"> </span>granted
+<span class="w">        </span>AllowOverride<span class="w"> </span>all
+<span class="w">        </span><span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</code></pre></div>
+<p>Make sure to create log files for Apache before deployment, the path to apaches log directory may be different depending on factors like your distribution, so make sure to check where it is first.</p>
+<h2 id="more-webservers"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3</span> More webservers<a class="headerlink" href="#more-webservers" title="Permanent link">¶</a></h2>
 <p>Currently, no documentation is provided for other web server solutions.</p>
 <p>Please refer to the Laravel documentation regarding the setup process for your specific web server solution.</p>
 <aside class="md-source-file">
@@ -429,7 +469,7 @@ allow all;
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-11-29T22:56:07+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-11-29</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-27T13:34:51+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-27</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Created">
@@ -439,16 +479,17 @@ allow all;
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"></path></svg>
 </span>
 <nav>
-<a href="mailto:contact.magiclike@protonmail.com">MagicLike</a>
+<a href="mailto:contact.magiclike@protonmail.com">MagicLike</a>, 
+        <a href="mailto:levipalm95@gmail.com">Levi</a>
 </nav>
 </span>
 </aside>
 <div class="md-source-date">
 <small>
-          Authors: <span class="git-page-authors git-authors">MagicLike</span>
+          Authors: <span class="git-page-authors git-authors">MagicLike (69.16%), Levi (30.84%)</span>
 </small>
 </div>
 </article>
