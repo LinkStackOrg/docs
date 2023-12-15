@@ -14,7 +14,7 @@ We offer a public instance that you can use to get started with our platform. Yo
 
 [**Public instance**](https://linksta.cc)
 
-If you want to have full control over your website, you can set up your own web server. This option requires some technical knowledge, but it gives you complete control over your website. You can choose your own hosting provider, install the necessary software and plugins, and customise your website to your liking. You can find instructions on how to set up our platform on your own web server by following the link [here](https://github.com/LinkStackOrg/LinkStack#readme).
+If you want to have full control over your website, you can set up your own web server. This option requires some technical knowledge, but it gives you complete control over your website. You can choose your own hosting provider, install the necessary software and plugins, and customise your website to your liking. You can find instructions on how to set up our platform on your own web server by following the link [here](./requirements.md).
 
 [**Web version**](https://linkstack.org/get-started)
 
