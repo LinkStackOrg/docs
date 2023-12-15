@@ -67,6 +67,39 @@ allow all;
 }
 ```
 
+## Apache2
+
+**This is just an example, we assume that you have prior experience setting up Apache Vhosts!**
+
+**Access to configuration files is already denied via `.htaccess` files in the LinkStack root directory.**
+
+<br>
+
+```xml
+<VirtualHost *:80>
+        ServerName example.com
+        ServerAlias www.example.com
+        ServerAdmin webmaster@localhost
+        DocumentRoot /path/to/example.com
+        DirectoryIndex index.htm index.html index.php
+        ErrorLog /var/log/httpd/linkstack/error.log
+        CustomLog /var/log/httpd/linkstack/access.log combined
+
+        <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+        </Directory>
+
+        <Directory /path/to/example.com/>
+        Options -Indexes +MultiViews +FollowSymLinks +ExecCGI
+        Require all granted
+        AllowOverride all
+        </Directory>
+</VirtualHost>
+```
+
+Make sure to create log files for Apache before deployment, the path to apaches log directory may be different depending on factors like your distribution, so make sure to check where it is first.
+
 ## More webservers
 
 Currently, no documentation is provided for other web server solutions.
