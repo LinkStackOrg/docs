@@ -195,4 +195,4 @@ plugins:
         - nglb
       auto_caption: true
       caption_position: bottom
-  - print-site
+  #- print-site
