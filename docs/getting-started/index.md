@@ -6,7 +6,7 @@ Create a personalized and professional profile page. Showcase all your important
 **Get LinkStack:**
 
 - [Use it online](https://linksta.cc)
-- [Use we Web Version](https://linkstack.org/get-started)
+- [Use the Web Version](https://linkstack.org/get-started)
 - [Get the Docker Version](https://linkstack.org/docker)
 
 
