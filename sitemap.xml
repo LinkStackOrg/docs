@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.linkstack.org/getting-started/download/</loc>
+         <lastmod>2023-12-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.linkstack.org/getting-started/other-webservers/</loc>
          <lastmod>2023-12-15</lastmod>
          <changefreq>daily</changefreq>
