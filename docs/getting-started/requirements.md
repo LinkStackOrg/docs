@@ -1,6 +1,6 @@
 # Requirements
 
-**Under most conditions, LinkStack conditions is a simple drag and drop solution with no further configuration required.**
+**Under most conditions, LinkStack is a simple drag and drop solution with no further configuration required.**
 
 While LinkStack is easy to deploy, in order to properly install, it does have basic requirements. The server requirements for where LinkStack will be installed are listed below:
 
