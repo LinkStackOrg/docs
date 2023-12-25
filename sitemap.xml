@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.linkstack.org/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/faq/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/docker/reverse-proxies/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/getting-started/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/getting-started/download/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/getting-started/other-webservers/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/getting-started/requirements/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/getting-started/setup/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.linkstack.org/setup/edit-terms-privacy-and-contact/</loc>
-         <lastmod>2023-12-18</lastmod>
+         <lastmod>2023-12-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
