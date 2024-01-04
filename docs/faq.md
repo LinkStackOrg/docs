@@ -33,7 +33,7 @@ Do you want to use your own Domain or want a private instance? Sponsor LinkStack
 
 Self-hosting is not the only option available for using LinkStack. 
 
-The project offers various tiers of [hosted instances](https://linkstack.org/hosted/) for GitHub Sponsors. Additionally, you can find [instances of LinkStack](https://linkstack.org/instances/) hosted by others in the community.
+The project offers various tiers of [hosted instances](https://linkstack.org/hosted) for GitHub Sponsors. Additionally, you can find [instances of LinkStack](https://linkstack.org/instances) hosted by others in the community.
 
 ## How can I update LinkStack?
 
