@@ -9,6 +9,9 @@ labels:
       - "traefik.http.routers.name-ui.entrypoints=https"
       - "traefik.http.routers.name-ui.tls=true"
       - "traefik.http.routers.name-ui.tls.certresolver=le"
+      - "traefik.http.routers.name-ui.service=yrtree-ui"
+      - "traefik.http.services.name-ui.loadBalancer.server.port=443"
+      - "traefik.http.services.name-ui.loadbalancer.server.scheme=https"
       - "traefik.http.routers.name-ui.middlewares=name-head,default@file"
       - "traefik.http.middlewares.name-head.headers.customrequestheaders.X-Forwarded-Proto=https"
       - "traefik.http.middlewares.name-head.headers.customResponseHeaders.X-Robots-Tag=none"
@@ -19,6 +22,9 @@ labels:
 ```
 Start your Docker Compose and navigate to your "persistent storage" and 
 change the .env search for FORCE_HTTPS=false (line 85) and set this to "true"
+For this to work, the following must be set in the Traefik Config (static config) 
+serversTransport:
+  insecureSkipVerify: true
 
 ## Nginx 
 Make sure to use HTTPS to access your container to avoid mixed content errors
