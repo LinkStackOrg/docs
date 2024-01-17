@@ -22,9 +22,12 @@ labels:
 ```
 Start your Docker Compose and navigate to your "persistent storage" and 
 change the .env search for FORCE_HTTPS=false (line 85) and set this to "true"
+
 For this to work, the following must be set in the Traefik Config (static config) 
+```
 serversTransport:
   insecureSkipVerify: true
+```
 
 ## Nginx 
 Make sure to use HTTPS to access your container to avoid mixed content errors
