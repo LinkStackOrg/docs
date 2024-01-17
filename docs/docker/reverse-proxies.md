@@ -9,7 +9,7 @@ labels:
       - "traefik.http.routers.name-ui.entrypoints=https"
       - "traefik.http.routers.name-ui.tls=true"
       - "traefik.http.routers.name-ui.tls.certresolver=le"
-      - "traefik.http.routers.name-ui.service=yrtree-ui"
+      - "traefik.http.routers.name-ui.service=name-ui"
       - "traefik.http.services.name-ui.loadBalancer.server.port=443"
       - "traefik.http.services.name-ui.loadbalancer.server.scheme=https"
       - "traefik.http.routers.name-ui.middlewares=name-head,default@file"
