@@ -20,7 +20,7 @@ important links to easy accessible and hosted on your own web-server or web-ho
 
 ## What do I need to use LinkStack?
 
-To host your own instance of LinkStack, you will need a web server running at least PHP 8.1
+To host your own instance of LinkStack, you will need a web server running at least PHP 8.0.
 
 
 ## Can I still use LinkStack if I don’t have a web server?
@@ -38,6 +38,10 @@ The project offers various tiers of [hosted instances](https://linkstack.org/hos
 ## How can I update LinkStack?
 
 LinkStack can be updated from the administrator control panel (if you are an admin). Updates can be installed manually or handled by the automatic updater.
+
+## After installing LinkStack, how do I access the admin area?
+
+After installation, you can access the administrator panel by visiting the `/login` page and signing in with the administrator credentials set when using the setup wizard. See also the [admin access](/access-admin) page.
 
 ## How can I contribute to LinkStack?
 
