@@ -106,6 +106,7 @@ nav:
         - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
     - Docker:
+        - Setup: docker/setup.md
         - Reverse Proxies: docker/reverse-proxies.md
     - Setup:
     #    - First steps: setup/first-steps.md
