@@ -1,0 +1,5 @@
+# Accessing the administrator panel
+
+After installation, you can access the administrator panel by visiting the `/login` page and signing in with the administrator credentials set when using the setup wizard.
+
+For example, if you installed LinkStack in the directory of `https://linkstack.example.com` then navigating to `https://linkstack.example/login` and signing in with the admin user will give you access to the administrator panel.
