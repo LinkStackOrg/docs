@@ -64,3 +64,15 @@ server {
   }
 }
 ```
+
+## Caddy
+Make sure to use HTTPS for redirection to avoid mixed content errors. 
+
+Add this to your Caddyfile:
+```Caddyfile
+links.example.com {
+  reverse_proxy https://localhost:443 {
+    tls_insecure_skip_verify
+  }
+}
+```
