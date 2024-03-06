@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.linkstack.org/docker/setup/</loc>
+         <lastmod>2024-03-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.linkstack.org/getting-started/</loc>
          <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
