@@ -97,9 +97,47 @@ allow all;
         </Directory>
 </VirtualHost>
 ```
+## Litespeed
 
-Make sure to create log files for Apache before deployment, the path to apaches log directory may be different depending on factors like your distribution, so make sure to check where it is first.
+**This is just an .htaccess example, we assume that you have prior experience setting up Litespeed - Cyberpanel!** 
 
+```
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+# Restrict access to critical files
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<Files ~ "\.sqlite$">
+    Order allow,deny
+    Deny from all
+</Files>
+<Files ~ "\.zip$">
+    Order allow,deny
+    Deny from all
+</Files>
+```
+ 
 ## More webservers
 
 Currently, no documentation is provided for other web server solutions.
