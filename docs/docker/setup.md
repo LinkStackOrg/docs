@@ -73,6 +73,9 @@ services:
       - LOG_LEVEL=info
       - PHP_MEMORY_LIMIT=512M
       - UPLOAD_MAX_FILESIZE=16M
+    ports:
+      - "80:80"
+      - "443:443"
     volumes:
       - linkstack:/htdocs
     restart: unless-stopped
