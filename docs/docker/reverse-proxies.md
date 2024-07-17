@@ -72,7 +72,9 @@ Add this to your Caddyfile:
 ```Caddyfile
 links.example.com {
   reverse_proxy https://localhost:443 {
-    tls_insecure_skip_verify
+    transport http {
+      tls_insecure_skip_verify
+    }
   }
 }
 ```
