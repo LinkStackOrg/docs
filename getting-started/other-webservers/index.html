@@ -244,7 +244,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#more-webservers">5.3 
+<a class="md-nav__link" href="#litespeed">5.3 
+<span class="md-ellipsis">
+      Litespeed
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-webservers">5.4 
 <span class="md-ellipsis">
       More webservers
     </span>
@@ -340,7 +347,14 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#more-webservers">5.3 
+<a class="md-nav__link" href="#litespeed">5.3 
+<span class="md-ellipsis">
+      Litespeed
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-webservers">5.4 
 <span class="md-ellipsis">
       More webservers
     </span>
@@ -464,8 +478,44 @@ allow all;
 <span class="w">        </span><span class="nt">&lt;/Directory&gt;</span>
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
-<p>Make sure to create log files for Apache before deployment, the path to apaches log directory may be different depending on factors like your distribution, so make sure to check where it is first.</p>
-<h2 id="more-webservers"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.3</span> More webservers<a class="headerlink" href="#more-webservers" title="Permanent link">¶</a></h2>
+<h2 id="litespeed"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.3</span> Litespeed<a class="headerlink" href="#litespeed" title="Permanent link">¶</a></h2>
+<p><strong>This is just an .htaccess example, we assume that you have prior experience setting up Litespeed - Cyberpanel!</strong> </p>
+<div class="highlight"><pre><span></span><code>&lt;IfModule mod_rewrite.c&gt;
+    &lt;IfModule mod_negotiation.c&gt;
+        Options -MultiViews
+    &lt;/IfModule&gt;
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+&lt;/IfModule&gt;
+
+# Restrict access to critical files
+&lt;FilesMatch "^\."&gt;
+Order allow,deny
+Deny from all
+&lt;/FilesMatch&gt;
+&lt;Files ~ "\.sqlite$"&gt;
+    Order allow,deny
+    Deny from all
+&lt;/Files&gt;
+&lt;Files ~ "\.zip$"&gt;
+    Order allow,deny
+    Deny from all
+&lt;/Files&gt;
+</code></pre></div>
+<h2 id="more-webservers"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4</span> More webservers<a class="headerlink" href="#more-webservers" title="Permanent link">¶</a></h2>
 <p>Currently, no documentation is provided for other web server solutions.</p>
 <p>Please refer to the Laravel documentation regarding the setup process for your specific web server solution.</p>
 <aside class="md-source-file">
@@ -473,7 +523,7 @@ allow all;
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-27T13:34:51+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-27</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-06-25T00:25:11+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-25</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Created">
@@ -486,13 +536,13 @@ allow all;
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"></path></svg>
 </span>
 <nav>
-      MagicLike, Levi
+      MagicLike, Altomarketing.com, Levi
     </nav>
 </span>
 </aside>
 <div class="md-source-date">
 <small>
-          Authors: <span class="git-page-authors git-authors">MagicLike (69.16%), Levi (30.84%)</span>
+          Authors: <span class="git-page-authors git-authors">MagicLike (51.03%), Altomarketing.com (26.9%), Levi (22.07%)</span>
 </small>
 </div>
 </article>
