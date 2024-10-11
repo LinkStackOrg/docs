@@ -103,16 +103,15 @@ nav:
         - getting-started/index.md
         - Requirements: getting-started/requirements.md
         - Download: getting-started/download.md
-        - Setup: getting-started/setup.md
         - Other webservers: getting-started/other-webservers.md
     - Docker:
         - Setup: docker/setup.md
         - Reverse Proxies: docker/reverse-proxies.md
-    - Setup:
+    - How To Setup LinkStack:
     #    - First steps: setup/first-steps.md
     #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
-        - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
-        - Setup: setup/setup.md
+          - Setup: setup/setup.md
+          - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
     #    - Disable registration: setup/disable-registration.md
     # - Configuration:
     #     - configuration/index.md
