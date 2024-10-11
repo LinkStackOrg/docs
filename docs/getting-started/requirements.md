@@ -2,13 +2,13 @@
 
 **LinkStack under optimal conditions is a simple drag and drop solution with no further configuration required.**
 
-Here are all requirements listed, for you to check.
+Listed below are all the reqiured modules for LinkStack to run.
 
 ## Webserver
 
 - Apache web server/web host with ``.htaccess`` support
 - Apache Module ``mod_rewrite``
-- At least PHP 8.0 or above
+- At least PHP 8.1 or above
 - Read and write access to files in the root directory, as well as files in the directories ``storage`` and ``database``.
 - Access over HTTPS/valid SSL certificate
 
@@ -16,19 +16,18 @@ Here are all requirements listed, for you to check.
 
 ## Required PHP modules:
 
-- BCMath PHP Extension
-- Ctype PHP Extension
-- cURL PHP Extension
-- DOM PHP Extension
-- Fileinfo PHP Extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PCRE PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- iconv PHP Extension
-- XML PHP Extension
+- BCMath PHP Extension	
+- Ctype PHP Extension	
+- cURL PHP Extension	
+- DOM PHP Extension	
+- Fileinfo PHP Extension	
+- JSON PHP Extension	
+- Mbstring PHP Extension	
+- OpenSSL PHP Extension	
+- PCRE PHP Extension	
+- PDO PHP Extension	
+- Tokenizer PHP Extension	
+- XML PHP Extension	
 
 Depending on your database type:
 
@@ -36,4 +35,4 @@ Depending on your database type:
 - MySQL PHP Extension
 
 
-*This documentation only applies to the webserver deploy. If you deploy LinkStack as Docker-container, please take a look at the docker specific docs.*
+*This documentation only applies to Linkstack instances deployed on a websever. If your instance is deployed as a Docker container, please take a look at the docker specific documentation.*
