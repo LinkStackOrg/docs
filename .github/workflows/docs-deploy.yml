@@ -1,7 +1,7 @@
 name: docs-deploy 
 on:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 * * 36"
   push:
     branches: 
       - main
