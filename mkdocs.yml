@@ -140,9 +140,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.linkstack.org
       name: Discord
-    - icon: simple/matrix
-      link: https://matrix.linkstack.org
-      name: Matrix
+   
     - icon: simple/lemmy
       link: https://lemmy.ml/c/linkstack
       name: Lemmy
