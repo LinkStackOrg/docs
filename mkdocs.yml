@@ -112,7 +112,7 @@ nav:
     #    - First steps: setup/first-steps.md
     #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
         - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
-         - Setup: setup/setup.md
+        - Setup: setup/setup.md
     #    - Disable registration: setup/disable-registration.md
     # - Configuration:
     #     - configuration/index.md
