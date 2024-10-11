@@ -9,6 +9,10 @@
          <lastmod>2024-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.linkstack.org/configuration/edit-terms-privacy-and-contact/</loc>
+         <lastmod>2024-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.linkstack.org/docker/reverse-proxies/</loc>
          <lastmod>2024-10-11</lastmod>
     </url>
@@ -33,11 +37,7 @@
          <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>https://docs.linkstack.org/getting-started/setup/</loc>
-         <lastmod>2024-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.linkstack.org/setup/edit-terms-privacy-and-contact/</loc>
+         <loc>https://docs.linkstack.org/setup/setup/</loc>
          <lastmod>2024-10-11</lastmod>
     </url>
 </urlset>

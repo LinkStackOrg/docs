@@ -7,11 +7,11 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Documentation of the open-source Linktree alternative" name="description"/>
 <link href="https://docs.linkstack.org/docker/setup/" rel="canonical"/>
-<link href="../../getting-started/other-webservers/" rel="prev"/>
+<link href="../../setup/setup/" rel="prev"/>
 <link href="../reverse-proxies/" rel="next"/>
 <link href="../../assets/img/logo/logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.40" name="generator"/>
-<title>Setup - LinkStack documentation</title>
+<title>Docker Setup - LinkStack documentation</title>
 <link href="../../assets/stylesheets/main.8c3ca2c6.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../../css/timeago.css" rel="stylesheet"/>
@@ -32,7 +32,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#docker-setup">6. 
+<a class="md-skip" href="#docker-setup">5. 
           Skip to content
         </a>
 </div>
@@ -56,7 +56,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Setup
+              Docker Setup
             
           </span>
 </div>
@@ -203,20 +203,6 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../getting-started/setup/">
-<span class="md-ellipsis">
-    Setup
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../getting-started/other-webservers/">
-<span class="md-ellipsis">
-    Other webservers
-  </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -224,27 +210,34 @@
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
 <span class="md-ellipsis">
-    Docker
+    Setup
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-            Docker
+            Setup
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../setup/setup/">
+<span class="md-ellipsis">
+    Setup
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    Setup
+    Docker Setup
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    Setup
+    Docker Setup
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -254,7 +247,7 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#deployment">6.1 
+<a class="md-nav__link" href="#deployment">5.1 
 <span class="md-ellipsis">
       Deployment
     </span>
@@ -262,21 +255,21 @@
 <nav aria-label="Deployment" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#supported-architectures">6.1.1 
+<a class="md-nav__link" href="#supported-architectures">5.1.1 
 <span class="md-ellipsis">
       Supported Architectures
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-run-deployment">6.1.2 
+<a class="md-nav__link" href="#docker-run-deployment">5.1.2 
 <span class="md-ellipsis">
       Docker Run Deployment
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-compose-stack">6.1.3 
+<a class="md-nav__link" href="#docker-compose-stack">5.1.3 
 <span class="md-ellipsis">
       Docker Compose Stack
     </span>
@@ -286,7 +279,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-bind-mounts">6.2 
+<a class="md-nav__link" href="#docker-bind-mounts">5.2 
 <span class="md-ellipsis">
       Docker Bind Mounts
     </span>
@@ -302,6 +295,13 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../getting-started/other-webservers/">
+<span class="md-ellipsis">
+    Other webservers
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -309,18 +309,18 @@
 <input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
 <span class="md-ellipsis">
-    Setup
+    Configuration
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
-            Setup
+            Configuration
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../setup/edit-terms-privacy-and-contact/">
+<a class="md-nav__link" href="../../configuration/edit-terms-privacy-and-contact/">
 <span class="md-ellipsis">
     Edit Terms, Privacy and Contact
   </span>
@@ -344,7 +344,7 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#deployment">6.1 
+<a class="md-nav__link" href="#deployment">5.1 
 <span class="md-ellipsis">
       Deployment
     </span>
@@ -352,21 +352,21 @@
 <nav aria-label="Deployment" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#supported-architectures">6.1.1 
+<a class="md-nav__link" href="#supported-architectures">5.1.1 
 <span class="md-ellipsis">
       Supported Architectures
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-run-deployment">6.1.2 
+<a class="md-nav__link" href="#docker-run-deployment">5.1.2 
 <span class="md-ellipsis">
       Docker Run Deployment
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-compose-stack">6.1.3 
+<a class="md-nav__link" href="#docker-compose-stack">5.1.3 
 <span class="md-ellipsis">
       Docker Compose Stack
     </span>
@@ -376,7 +376,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#docker-bind-mounts">6.2 
+<a class="md-nav__link" href="#docker-bind-mounts">5.2 
 <span class="md-ellipsis">
       Docker Bind Mounts
     </span>
@@ -416,11 +416,11 @@
 <a class="md-content__button md-icon" href="https://github.com/LinkStackOrg/docs/blob/main/docs/docker/setup.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
 </a>
-<h1 id="docker-setup"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.</span> Docker Setup<a class="headerlink" href="#docker-setup" title="Permanent link">¶</a></h1>
+<h1 id="docker-setup"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.</span> Docker Setup<a class="headerlink" href="#docker-setup" title="Permanent link">¶</a></h1>
 <p>You can find the offical Docker Version of LinkStack <a href="https://github.com/linkstackorg/linkstack-docker">here</a>.</p>
 <p>The docker version of LinkStack retains all the features and customization options of the <a href="https://github.com/JulianPrieber/littlelink-custom">original version</a>.</p>
 <p>This docker is based on <a href="https://www.alpinelinux.org/">Alpine Linux</a>, a Linux distribution designed to be small, simple and secure. The web server is running <a href="https://www.apache.org/">Apache2</a>, a free and open-source cross-platform web server software. The docker comes with <a href="https://www.php.net/releases/8.2/en.php">PHP 8.2</a> for high compatibility and performance.</p>
-<h2 id="deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1</span> Deployment<a class="headerlink" href="#deployment" title="Permanent link">¶</a></h2>
+<h2 id="deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1</span> Deployment<a class="headerlink" href="#deployment" title="Permanent link">¶</a></h2>
 <p>The Docker Image exposes HTTP on port 80 and HTTPS on Port 443. You can modify your deployment via the following optional environment variables</p>
 <table>
 <thead>
@@ -468,14 +468,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="supported-architectures"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.1</span> Supported Architectures<a class="headerlink" href="#supported-architectures" title="Permanent link">¶</a></h3>
+<h3 id="supported-architectures"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1.1</span> Supported Architectures<a class="headerlink" href="#supported-architectures" title="Permanent link">¶</a></h3>
 <ul>
 <li>linux/amd64</li>
 <li>linux/arm/v6</li>
 <li>linux/arm/v7</li>
 <li>linux/arm64</li>
 </ul>
-<h3 id="docker-run-deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.2</span> Docker Run Deployment<a class="headerlink" href="#docker-run-deployment" title="Permanent link">¶</a></h3>
+<h3 id="docker-run-deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1.2</span> Docker Run Deployment<a class="headerlink" href="#docker-run-deployment" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>linkstack
 
 docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"> </span><span class="se">\</span>
@@ -502,7 +502,7 @@ docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"
 <span class="w">    </span>--mount<span class="w"> </span><span class="nv">source</span><span class="o">=</span>linkstack,target<span class="o">=</span>/htdocs<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>linkstackorg/linkstack
 </code></pre></div>
-<h3 id="docker-compose-stack"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.3</span> Docker Compose Stack<a class="headerlink" href="#docker-compose-stack" title="Permanent link">¶</a></h3>
+<h3 id="docker-compose-stack"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1.3</span> Docker Compose Stack<a class="headerlink" href="#docker-compose-stack" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">'3'</span>
 <span class="nt">services</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">linkstack</span><span class="p">:</span>
@@ -524,7 +524,7 @@ docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"
 <span class="nt">volumes</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">linkstack</span><span class="p">:</span>
 </code></pre></div>
-<h2 id="docker-bind-mounts"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2</span> Docker Bind Mounts<a class="headerlink" href="#docker-bind-mounts" title="Permanent link">¶</a></h2>
+<h2 id="docker-bind-mounts"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.2</span> Docker Bind Mounts<a class="headerlink" href="#docker-bind-mounts" title="Permanent link">¶</a></h2>
 <p>It's also possible to run the image with <a href="https://docs.docker.com/storage/bind-mounts/">Docker Bind Mounts</a> instead of <a href="https://docs.docker.com/storage/volumes/">Docker Volumes</a>. But you have to download the <a href="https://github.com/linkstackorg/linkstack/releases/latest/download/linkstack.zip">latest release of linkstack</a> by yourself and place it in the mounted directory if you do that. Be sure to give the files the owner and group <code>apache</code> with the uid 100 and gid 101.</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
@@ -564,7 +564,7 @@ docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Other webservers" class="md-footer__link md-footer__link--prev" href="../../getting-started/other-webservers/">
+<a aria-label="Previous: Setup" class="md-footer__link md-footer__link--prev" href="../../setup/setup/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -573,7 +573,7 @@ docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"
                 Previous
               </span>
 <div class="md-ellipsis">
-                Other webservers
+                Setup
               </div>
 </div>
 </a>
@@ -616,12 +616,6 @@ docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"
 </a>
 <a class="md-social__link" href="https://discord.linkstack.org" rel="noopener" target="_blank" title="Discord">
 <svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"></path></svg>
-</a>
-<a class="md-social__link" href="https://matrix.linkstack.org" rel="noopener" target="_blank" title="Matrix">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033a3.3 3.3 0 0 1 1.117-1.024c.433-.245.936-.365 1.5-.365q.81.002 1.481.314c.448.208.785.582 1.02 1.108q.382-.562 1.034-.992.651-.43 1.546-.43.679 0 1.26.167c.388.11.716.286.993.53.276.245.489.559.646.951q.229.587.23 1.417v5.728h-2.349V11.52q0-.43-.032-.812a1.8 1.8 0 0 0-.18-.66 1.1 1.1 0 0 0-.438-.448q-.292-.165-.785-.166-.498 0-.803.189a1.4 1.4 0 0 0-.48.499 2 2 0 0 0-.231.696 5.6 5.6 0 0 0-.06.785v4.768h-2.35v-4.8q.002-.38-.018-.752a2.1 2.1 0 0 0-.143-.688 1.05 1.05 0 0 0-.415-.503c-.194-.125-.476-.19-.854-.19q-.168 0-.439.074c-.18.051-.36.143-.53.282a1.64 1.64 0 0 0-.439.595q-.18.39-.18 1.02v4.966H5.46V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"></path></svg>
-</a>
-<a class="md-social__link" href="https://lemmy.ml/c/linkstack" rel="noopener" target="_blank" title="Lemmy">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.96 4.223a4 4 0 0 0-.333.019A2.84 2.84 0 0 0 .474 5.628c-.475.8-.593 1.68-.35 2.497.242.816.83 1.558 1.698 2.145l.016.011c.746.45 1.492.743 2.288.9-.02.332-.028.669-.006 1.018.063 1.043.436 2 .996 2.85l-2.006.818a.42.42 0 0 0-.228.224.42.42 0 0 0 .088.455.42.42 0 0 0 .294.123.4.4 0 0 0 .16-.031l2.209-.904c.408.486.87.932 1.372 1.318q.03.02.06.043l-1.291 1.71a.416.416 0 0 0 .664.5l1.314-1.738a9.3 9.3 0 0 0 2.229 1.025c.383.72 1.138 1.187 2.02 1.187.89 0 1.644-.501 2.024-1.207a9.4 9.4 0 0 0 2.208-1.027l1.332 1.76a.416.416 0 0 0 .744-.193.42.42 0 0 0-.08-.307l-1.31-1.735c.008-.007.018-.01.026-.018.497-.38.955-.818 1.362-1.294l2.155.88a.416.416 0 0 0 .541-.228.415.415 0 0 0-.227-.544l-1.944-.792c.577-.854.97-1.819 1.05-2.87.027-.35.025-.691.009-1.026a7 7 0 0 0 2.273-.897l.017-.012c.868-.587 1.456-1.328 1.698-2.145.242-.816.125-1.697-.35-2.497a2.84 2.84 0 0 0-2.155-1.386 3 3 0 0 0-.332-.019c-.786-.015-1.623.23-2.429.694-.593.342-1.125.867-1.543 1.439-1.17-.67-2.693-1.048-4.564-1.078a16 16 0 0 0-.51 0c-2.086.034-3.755.43-5.015 1.144-.003-.003-.005-.011-.008-.015-.423-.591-.973-1.136-1.584-1.489-.805-.465-1.643-.708-2.428-.694Zm.285.736c.557.042 1.17.236 1.779.588.485.28.976.755 1.346 1.27a6 6 0 0 0-.497.408c-.92.852-1.461 1.96-1.668 3.233a6.2 6.2 0 0 1-1.984-.794C1.466 9.15 1.005 8.54.821 7.919.636 7.295.713 6.648 1.098 6c.375-.63.928-.953 1.612-1.032a3 3 0 0 1 .535-.007Zm17.51 0a3 3 0 0 1 .535.008c.684.078 1.237.402 1.612 1.032.385.648.462 1.296.277 1.92-.184.622-.645 1.231-1.4 1.744a6.2 6.2 0 0 1-1.96.789c-.194-1.297-.737-2.434-1.666-3.302a6 6 0 0 0-.47-.392c.364-.49.828-.943 1.293-1.212.61-.351 1.222-.545 1.779-.587Zm-8.749 1.045a15 15 0 0 1 .487 0c2.39.039 4.085.67 5.163 1.678 1.15 1.075 1.642 2.6 1.5 4.467-.132 1.707-1.221 3.228-2.653 4.324a9 9 0 0 1-2.225 1.229c.003-.045.014-.089.014-.135.003-1.196-.932-2.213-2.292-2.213s-2.322 1.015-2.292 2.221c.001.05.014.097.018.147a8.9 8.9 0 0 1-2.278-1.245c-1.423-1.095-2.5-2.613-2.603-4.322-.113-1.857.378-3.339 1.521-4.397s2.986-1.711 5.64-1.754m-3.642 6.829a1.096 1.096 0 1 0 0 2.192 1.096 1.096 0 0 0 0-2.192m7.282.011a1.086 1.086 0 1 0 0 2.173 1.086 1.086 0 0 0 0-2.173M12 16.084c1.024 0 1.565.638 1.563 1.482-.001.785-.672 1.485-1.563 1.485-.917 0-1.54-.562-1.563-1.493-.022-.834.54-1.474 1.563-1.474"></path></svg>
 </a>
 <a class="md-social__link" href="https://linkstack.org/donate" rel="noopener" target="_blank" title="Sponsor us">
 <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m47.6 300.4 180.7 168.7c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l180.7-168.7c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141-45.6-7.6-92 7.3-124.6 39.9l-12 12-12-12c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5"></path></svg>
