@@ -103,17 +103,17 @@ nav:
         - getting-started/index.md
         - Requirements: getting-started/requirements.md
         - Download: getting-started/download.md
-        - Setup: getting-started/setup.md
-        - Other webservers: getting-started/other-webservers.md
-    - Docker:
-        - Setup: docker/setup.md
-        - Reverse Proxies: docker/reverse-proxies.md
+  
     - Setup:
     #    - First steps: setup/first-steps.md
     #   - Getting to know the Admin Panel: setup/getting-to-know-the-admin-panel.md
-        - Edit Terms, Privacy and Contact: setup/edit-terms-privacy-and-contact.md
+          - Setup: setup/setup.md
+          - Docker Setup: docker/setup.md
+          - Reverse Proxies: docker/reverse-proxies.md
+          - Other webservers: getting-started/other-webservers.md
+
     #    - Disable registration: setup/disable-registration.md
-    # - Configuration:
+    - Configuration:
     #     - configuration/index.md
     #     - Email verification: configuration/email-verification.md
     #     - Internal notifications: configuration/internal-notifications.md
@@ -125,6 +125,8 @@ nav:
     #     - Cache Settings: configuration/cache-settings.md
     #     - Miscellaneous Settings: configuration/miscellaneous-settings.md
     #     - Social login: configuration/social-login.md
+          - Edit Terms, Privacy and Contact: configuration/edit-terms-privacy-and-contact.md
+
 
 extra:
   social:
@@ -140,17 +142,11 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.linkstack.org
       name: Discord
-    - icon: simple/matrix
-      link: https://matrix.linkstack.org
-      name: Matrix
-    - icon: simple/lemmy
-      link: https://lemmy.ml/c/linkstack
-      name: Lemmy
     - icon: fontawesome/solid/heart
       link: https://linkstack.org/donate
       name: Sponsor us
 
-copyright: Copyright &copy; 2022 - 2023 LittleLink Custom | 2023 - present LinkStack
+copyright: Copyright &copy; 2022 - 2023 LittleLink Custom | 2023 - present LinkStack 
 
 extra_css:
   - assets/css/style.css
