@@ -110,7 +110,7 @@ nav:
           - Setup: setup/setup.md
           - Docker Setup: docker/setup.md
           - Reverse Proxies: docker/reverse-proxies.md
-          - Other webservers: getting-started/other-webservers.md
+          - Other webservers: setup/other-webservers.md
 
     #    - Disable registration: setup/disable-registration.md
     - Configuration:
