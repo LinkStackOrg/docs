@@ -23,6 +23,7 @@ The Docker Image exposes HTTP on port 80 and HTTPS on Port 443. You can modify y
 - linux/amd64
 - linux/arm/v6
 - linux/arm/v7
+- linux/arm/v8
 - linux/arm64
 
 ### Docker Run Deployment
