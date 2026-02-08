@@ -12,9 +12,9 @@ The Docker Image exposes HTTP on port 80 and HTTPS on Port 443. You can modify y
 |Variable|Function|default Value|
 |---|---|---|
 |SERVER_ADMIN|The admin's email address|you@example.com|
-|HTTP_SERVER_NAME|the http [server name](https://httpd.apache.org/docs/2.4/fr/mod/core.html#servername) of apache2|localhost|
-|HTTPS_SERVER_NAME|the https [server name](https://httpd.apache.org/docs/2.4/fr/mod/core.html#servername) of apache2|localhost|
-|LOG_LEVEL|The [log level](https://httpd.apache.org/docs/2.4/fr/mod/core.html#loglevel) of apache2|info|
+|HTTP_SERVER_NAME|the http [server name](https://httpd.apache.org/docs/2.4/en/mod/core.html#servername) of apache2|localhost|
+|HTTPS_SERVER_NAME|the https [server name](https://httpd.apache.org/docs/2.4/en/mod/core.html#servername) of apache2|localhost|
+|LOG_LEVEL|The [log level](https://httpd.apache.org/docs/2.4/en/mod/core.html#loglevel) of apache2|info|
 |TZ|The [timezone](https://www.php.net/manual/timezones.php)|UTC|
 |PHP_MEMORY_LIMIT|The php [memory-limit](https://www.php.net/manual/ini.core.php#ini.memory-limit)|256M|
 |UPLOAD_MAX_FILESIZE| The [upload-max-filesize](https://www.php.net/manual/en/ini.core.php#ini.upload-max-filesize) of PHP|8M|
@@ -86,4 +86,5 @@ volumes:
 
 ## Docker Bind Mounts
 It's also possible to run the image with [Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/) instead of [Docker Volumes](https://docs.docker.com/storage/volumes/). But you have to download the [latest release of linkstack](https://github.com/linkstackorg/linkstack/releases/latest/download/linkstack.zip) by yourself and place it in the mounted directory if you do that. Be sure to give the files the owner and group `apache` with the uid 100 and gid 101.
+
 
