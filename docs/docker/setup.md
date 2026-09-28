@@ -84,6 +84,12 @@ volumes:
   linkstack:
 ```
 
+## Easypanel
+
+[Easypanel](https://easypanel.io) is a self-hosted Docker deployment platform, and it maintains a one-click deployment template for LinkStack:
+
+[![Deploy on Easypanel](https://easypanel.io/img/deploy-on-easypanel-40.svg)](https://easypanel.io/templates/linkstack)
+
 ## Docker Bind Mounts
 It's also possible to run the image with [Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/) instead of [Docker Volumes](https://docs.docker.com/storage/volumes/). But you have to download the [latest release of linkstack](https://github.com/linkstackorg/linkstack/releases/latest/download/linkstack.zip) by yourself and place it in the mounted directory if you do that. Be sure to give the files the owner and group `apache` with the uid 100 and gid 101.
 
